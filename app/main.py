@@ -12,8 +12,4 @@ def read_root():
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
-    a=1+1
-    print(a)
-    a=a+1
-    print(a)
     return {"item_id": item_id, "q": q}
